@@ -1,0 +1,44 @@
+addEventListener('load', function(e) {
+  document.querySelector('#test').innerHTML = 'Music Explorer';
+});
+
+# 1. Clone this repo
+git clone <your-fork-url>
+cd global-hackathon-v1
+
+# 2. Create timestamp (REQUIRED for anti-cheating)
+date > .hackathon-start
+git add .hackathon-start
+git commit -m "Starting hackathon - $(date)"
+git push
+
+# 3. Build your project here
+
+// Liste der Songs (nur lizenzfreie Titel!)
+const songs = [
+  { title: "Acoustic Breeze – Bensound", file: "songs/song1.mp3" },
+  { title: "Creative Minds – Bensound", file: "songs/song2.mp3" },
+  { title: "Sunny – KODOMOi", file: "songs/song3.mp3" }
+];
+
+const songList = document.getElementById("song-list");
+const audioPlayer = document.getElementById("audio-player");
+const songTitle = document.getElementById("song-title");
+
+// Songs in die Liste einfügen
+songs.forEach((song, index) => {
+  const li = document.createElement("li");
+  li.textContent = song.title;
+  li.addEventListener("click", () => playSong(index));
+  songList.appendChild(li);
+});
+
+// Funktion zum Abspielen
+function playSong(index) {
+  const song = songs[index];
+  songTitle.textContent = song.title;
+  audioPlayer.src = song.file;
+  audioPlayer.play();
+}
+
+# 4. Commit regularly (minimum 5 commits)
