@@ -1,0 +1,43 @@
+#test {
+  color: gray;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+#player {
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 5px auto;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
