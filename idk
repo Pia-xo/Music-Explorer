@@ -41,4 +41,15 @@ function playSong(index) {
   audioPlayer.play();
 }
 
+const songs = [
+  { title: "World's a stage - Ketsa", file: "songs/Ketsa - World's A Stage.mp3" }
+];
+// ... benutze songs[0].file als src für den Player
+ 
 # 4. Commit regularly (minimum 5 commits)
+
+
+# CREDITS 
+
+Musik: "World's a stage" von Ketsa (Free Music Archive), Lizenz: CC BY 4.0 — (https://creativecommons.org/licenses/by/4.0/)
+Musik: "Titel" von Künstler (Free Music Archive), Lizenz: CC BY 4.0 — (Link zur Lizenz)
